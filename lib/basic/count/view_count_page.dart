@@ -1,4 +1,4 @@
-import 'package:bloc_learn/basic/cubit/count_cubit.dart';
+import 'package:bloc_learn/basic/count/cubit/count_cubit.dart';
 import 'package:bloc_learn/injector/injector.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -21,6 +21,8 @@ class CountPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   InkWell(
+                    overlayColor:
+                        const MaterialStatePropertyAll(Colors.transparent),
                     onTap: () {
                       context.read<CountCubit>().increment();
                     },
@@ -43,6 +45,8 @@ class CountPage extends StatelessWidget {
                     width: 20,
                   ),
                   InkWell(
+                    overlayColor:
+                        const MaterialStatePropertyAll(Colors.transparent),
                     onTap: () {
                       context.read<CountCubit>().decrement();
                     },

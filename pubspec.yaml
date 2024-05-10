@@ -41,7 +41,7 @@ dependencies:
   responsive_builder: ^0.7.0
   flutter_bloc: ^8.1.5
   shared_preferences: ^2.2.3
-  json_annotation: ^4.8.1
+  json_annotation: ^4.9.0
   get_it: ^7.6.7
   fluttertoast: ^8.2.4
   intl: ^0.18.1

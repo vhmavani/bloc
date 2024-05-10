@@ -1,3 +1,5 @@
+// ignore_for_file: invalid_annotation_target
+
 import 'package:bloc_learn/basic/list_api/model/list_model.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 

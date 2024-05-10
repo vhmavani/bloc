@@ -8,7 +8,7 @@
 // coverage:ignore-file
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
-import 'package:bloc_learn/basic/cubit/count_cubit.dart' as _i5;
+import 'package:bloc_learn/basic/count/cubit/count_cubit.dart' as _i5;
 import 'package:bloc_learn/basic/list_api/bloc/list_bloc.dart' as _i8;
 import 'package:bloc_learn/basic/list_api/repository/i_list_respository.dart'
     as _i6;
