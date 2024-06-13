@@ -30,10 +30,13 @@ class HomePage extends StatelessWidget {
                 padding: const EdgeInsets.all(20),
                 width: double.infinity,
                 alignment: Alignment.center,
-                color: Colors.amber,
+                color: Colors.yellow[600],
                 child: const Text(
                   'Count',
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
             ),
@@ -51,10 +54,13 @@ class HomePage extends StatelessWidget {
                 padding: const EdgeInsets.all(20),
                 width: double.infinity,
                 alignment: Alignment.center,
-                color: Colors.red,
+                color: Colors.blue[900],
                 child: const Text(
                   'Simple List',
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
                 ),
               ),
             )
