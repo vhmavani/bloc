@@ -36,20 +36,17 @@ class _ListViewPageState extends State<ListViewPage> {
                       return Container(
                         padding: const EdgeInsets.all(10),
                         margin: const EdgeInsets.only(bottom: 16),
-                        decoration: const BoxDecoration(
-                            color: Colors.white,
-                            boxShadow: [
-                              BoxShadow(
-                                blurRadius: 8,
-                                spreadRadius: 1,
-                                color: Colors.black,
-                                offset: Offset(2, 2),
-                              )
-                            ]),
+                        decoration: const BoxDecoration(color: Colors.white, boxShadow: [
+                          BoxShadow(
+                            blurRadius: 8,
+                            spreadRadius: 1,
+                            color: Colors.black,
+                            offset: Offset(2, 2),
+                          )
+                        ]),
                         child: Text(
                           state.qwertylist[index].title.toString(),
-                          style: const TextStyle(
-                              fontSize: 20, color: Colors.black),
+                          style: const TextStyle(fontSize: 20, color: Colors.black),
                         ),
                       );
                     },
@@ -57,6 +54,10 @@ class _ListViewPageState extends State<ListViewPage> {
                   if (state.isLoading)
                     const Center(
                       child: CircularProgressIndicator(),
+                    ),
+                  if (!state.isLoading && state.qwertylist.isEmpty)
+                    const Center(
+                      child: Text('No Data'),
                     ),
                 ],
               ),

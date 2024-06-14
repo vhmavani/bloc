@@ -19,6 +19,5 @@ class ListModel with _$ListModel {
 
   const ListModel._();
 
-  factory ListModel.fromJson(Map<String, dynamic> json) =>
-      _$ListModelFromJson(json);
+  factory ListModel.fromJson(Map<String, dynamic> json) => _$ListModelFromJson(json);
 }

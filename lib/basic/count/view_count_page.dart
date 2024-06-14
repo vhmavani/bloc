@@ -21,8 +21,7 @@ class CountPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   InkWell(
-                    overlayColor:
-                        const MaterialStatePropertyAll(Colors.transparent),
+                    overlayColor: const MaterialStatePropertyAll(Colors.transparent),
                     onTap: () {
                       context.read<CountCubit>().increment();
                     },
@@ -45,8 +44,7 @@ class CountPage extends StatelessWidget {
                     width: 20,
                   ),
                   InkWell(
-                    overlayColor:
-                        const MaterialStatePropertyAll(Colors.transparent),
+                    overlayColor: const MaterialStatePropertyAll(Colors.transparent),
                     onTap: () {
                       context.read<CountCubit>().decrement();
                     },

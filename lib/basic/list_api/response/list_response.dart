@@ -15,6 +15,5 @@ class ListResponse with _$ListResponse {
   }) = _ListResponse;
   const ListResponse._();
 
-  factory ListResponse.fromJson(Map<String, dynamic> json) =>
-      _$ListResponseFromJson(json);
+  factory ListResponse.fromJson(Map<String, dynamic> json) => _$ListResponseFromJson(json);
 }

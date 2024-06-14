@@ -12,11 +12,9 @@ class LocalStorageRepository extends ILocalStorageRepository {
   LocalStorageRepository(super.preferences);
 
   @override
-  Future<Either<CustomFailure, bool>> setUserToken(
-      {required String token}) async {
+  Future<Either<CustomFailure, bool>> setUserToken({required String token}) async {
     try {
-      final setUserToken =
-          await preferences.setString(AppString.userToken, token);
+      final setUserToken = await preferences.setString(AppString.userToken, token);
 
       if (!setUserToken) {
         return left(const CustomFailure.notFound());
@@ -58,8 +56,7 @@ class LocalStorageRepository extends ILocalStorageRepository {
   @override
   Future<Either<CustomFailure, bool>> setUser({required UserModel user}) async {
     try {
-      final isSuccess =
-          await preferences.setString(AppString.userPrefKey, jsonEncode(user));
+      final isSuccess = await preferences.setString(AppString.userPrefKey, jsonEncode(user));
 
       if (!isSuccess) {
         return left(const CustomFailure.message());
